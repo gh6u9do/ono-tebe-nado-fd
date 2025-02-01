@@ -31,10 +31,13 @@
 }
 
 .header__address {
-  /* без этого паддина pp не получается */
-  padding-right: 36px;
-
   justify-self: end;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  
+  width: 240px;
 }
 
 /* ------------------ конец блока header ------------------------------------------ */
@@ -321,7 +324,7 @@
   font-size: 18px;
 }
 
-.footer__links{
+.footer__links {
   display: flex;
   justify-content: end;
   gap: 48px;
@@ -332,10 +335,11 @@
   cursor: pointer;
 }
 
-.footer__social-icon{
+.footer__social-icon {
   max-height: 48px;
 }
 
+/* ------------------------------------- конец блока footer ------------------------ */
 /* ------------------------------------- общие классы ------------------------------ */
 .address {
   display: flex;
