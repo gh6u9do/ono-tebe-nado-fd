@@ -1,3 +1,7 @@
+body a{
+  text-decoration: none;
+}
+
 /* ----------------------------- header -------------------------------------------- */
 .header {
   padding: 92px 50px 96px 50px;
@@ -14,9 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
   gap: 32px;
 
   list-style: circle;
+
+  text-transform: lowercase;
 }
 
 .header__links-list-item_no-bullit {
@@ -147,16 +154,22 @@
   margin-bottom: 30px;
   padding: 0 24px;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
+  gap: 25px; */
+
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
+  justify-content: left;
 
   list-style: none;
 }
 
 .lots__card-list-item {
   min-height: 596px;
+  width: 334px;
 
   position: relative;
 
@@ -191,7 +204,6 @@
 }
 
 .card__text {
-  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #fff;
@@ -218,7 +230,6 @@
 
   padding-left: 64px;
 
-  font-weight: 400;
   font-size: 20px;
 }
 
@@ -298,7 +309,7 @@
   margin-top: 180px;
   margin-bottom: 82px;
 
-  padding: 0 50px;
+  padding: 2px 50px 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -308,8 +319,6 @@
   display: flex;
   justify-content: center;
   align-items: start;
-
-  padding-top: 2px;
 }
 
 .footer__menu-list {
@@ -374,3 +383,6 @@
 
   cursor: pointer;
 }
+
+
+/* спасибо, за ревью :) */
