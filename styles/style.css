@@ -39,10 +39,6 @@ body a {
 
 .header__address {
   justify-self: end;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
   
   width: 240px;
 }
@@ -53,7 +49,8 @@ body a {
 .cover {
   position: relative;
 
-  max-height: 757px;
+  min-height: 757px;
+  height: fit-content;
   width: 100%;
 
   display: flex;
@@ -128,7 +125,7 @@ body a {
   text-transform: uppercase;
   color: #fff;
 
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background: transparent;
 }
 
@@ -153,11 +150,6 @@ body a {
   margin-top: 27px;
   margin-bottom: 30px;
   padding: 0 24px;
-
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100%;
-  gap: 25px; */
 
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +237,7 @@ body a {
   grid-template-rows: 100%;
 }
 
-.about__black-circle {
+.about__background-logo {
   border-radius: 100%;
   background-color: black;
 
@@ -264,14 +256,12 @@ body a {
 
 .about__logo-image {
   background-image: url(../images/logo-white.svg);
-
-  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   width: 62%;
-  height: 48%;
+  height: 46%;
 
   z-index: 1;
 }
@@ -309,7 +299,7 @@ body a {
   margin-top: 180px;
   margin-bottom: 82px;
 
-  padding: 2px 50px 0;
+  padding: 1px 50px 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -361,8 +351,9 @@ body a {
   color: #000;
 }
 
-.address a {
-  text-decoration: none;
+.address__text {
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay {
@@ -383,6 +374,3 @@ body a {
 
   cursor: pointer;
 }
-
-
-/* спасибо, за ревью :) */
